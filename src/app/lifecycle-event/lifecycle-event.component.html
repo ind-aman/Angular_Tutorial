@@ -1,0 +1,11 @@
+<body>
+
+    <p>lifecycle-event works!</p>
+    <input type="text" name="inputVar" [(value)]="firstVar" id="" (change)="changeInput($event)" />
+    
+
+    <div class="child_component">
+        <app-first-child [childVar]="firstVar"/>   
+        <app-second-child (newItem)="stringFromchild($event)"/>
+    </div>
+</body>
