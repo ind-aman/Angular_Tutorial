@@ -1,11 +1,11 @@
 <body>
     
-    
+    <h2>Second Child</h2>
     <b>{{testVar}}</b>
     
     <form #myForm="ngForm" (submit)="inputSubmit(myForm)">
         
-        <input type="text" name="test1" ngModel id="">
+        <input type="text" name="test1" [(ngModel)]="testVar"  (ngModelChange)="this.newItem.emit(this.testVar);">
         <input type="submit">
     </form>
 </body>

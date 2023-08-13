@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LifecycleEventComponent } from './lifecycle-event/lifecycle-event.component';
 import { FirstChildComponent } from './lifecycle-event/first-child/first-child.component';
 import { SecondChildComponent } from './lifecycle-event/second-child/second-child.component';
+import { PromiseComponent } from './promise/promise.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SecondChildComponent } from './lifecycle-event/second-child/second-chil
     LifecycleEventComponent,
     FirstChildComponent,
     SecondChildComponent,
+    PromiseComponent,
   ],
   imports: [
     FormsModule,
