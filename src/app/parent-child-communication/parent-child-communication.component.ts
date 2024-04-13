@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-lifecycle-event',
-  templateUrl: './lifecycle-event.component.html',
-  styleUrls: ['./lifecycle-event.component.css']
+  selector: 'app-parent-child-communication',
+  templateUrl: './parent-child-communication.component.html',
+  styleUrls: ['./parent-child-communication.component.css']
 })
-export class LifecycleEventComponent {
+export class ParentChildCommunicationComponent {
   firstVar:any = "jackTack";
-
+  
 
   stringFromchild(secondChild:string){
       this.firstVar = secondChild;

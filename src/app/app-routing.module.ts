@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PromiseComponent } from './promise/promise.component';
-import { LifecycleEventComponent } from './lifecycle-event/lifecycle-event.component';
+import { ParentChildCommunicationComponent } from './parent-child-communication/parent-child-communication.component';
+import { HttpTutorialComponent } from './http-tutorial/http-tutorial.component';
 
 const routes: Routes = [
   { path: 'Promise' , component : PromiseComponent},
-  {path:'Communication', component:LifecycleEventComponent}
+  {path:'Communication', component:ParentChildCommunicationComponent},
+  {path:'Http', component:HttpTutorialComponent}
 ];
 
 @NgModule({
